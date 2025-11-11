@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Contact • Muruli H P</title><link rel="stylesheet" href="assets/css/style.css"/></head><body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">Muruli <span>H P</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="social-icons">
+      <a href="https://github.com/murulipachar" target="_blank" aria-label="GitHub"><img src="assets/images/github.svg" alt="GitHub"></a>
+      <a href="https://www.linkedin.com/in/muruli-h-p-9825651a5" target="_blank" aria-label="LinkedIn"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
+    </div>
+  </nav>
+</header>
+
+<div class="container section"><h2>Contact Me</h2><div class="grid grid-2">
+<div class="card"><form class="form" action="https://formsubmit.co/murulipachar58@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Portfolio contact form submission">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="contact.html?sent=1">
+<input class="input" type="text" name="name" placeholder="Your Name" required>
+<input class="input" type="email" name="email" placeholder="Your Email" required>
+<textarea class="textarea" name="message" placeholder="Your Message" required></textarea>
+<button class="btn" type="submit">Send Message</button>
+<a class="btn secondary" href="resume.pdf" download>Download Resume</a>
+<a class="btn" href="resume.pdf" target="_blank">View My Resume</a>
+</form></div>
+<div class="card"><h3>Connect</h3>
+<p><b>Email:</b> <a href="mailto:murulipachar58@gmail.com">murulipachar58@gmail.com</a></p>
+<p><b>GitHub:</b> <a href="https://github.com/murulipachar" target="_blank">github.com/murulipachar</a></p>
+<p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/muruli-h-p-9825651a5" target="_blank">linkedin.com/in/muruli-h-p-9825651a5</a></p>
+</div></div></div>
+
+<footer>
+  <p>© 2025 Muruli H P • Built with <span class="heart">💜</span> using HTML, CSS & AWS</p>
+</footer>
+<div id="backToTop" title="Back to top">↑</div>
+
+
+<script>
+const params=new URLSearchParams(window.location.search);
+if(params.get('sent')==='1'){
+  const card=document.querySelector('.form').parentElement;
+  const msg=document.createElement('p');
+  msg.innerHTML="<b>Thanks for reaching out!</b> I’ll get back to you soon.";
+  msg.style.color='green';
+  msg.style.marginTop='10px';
+  card.appendChild(msg);
+}
+</script>
+
+<script src="assets/js/main.js"></script></body></html>
